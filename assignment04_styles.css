@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Style for the gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This makes it responsive. */
+  grid-gap: 20px; /* Adjust space as needed */
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  /* Styles for each item, could include border, shadow, etc. for aesthetics */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%; /* Makes sure the image fills the box */
+  height: auto; /* Ensures the image keeps its aspect ratio */
+}
+
+.work-description {
+  padding: 15px;
+  text-align: center;
+}
+
+/* You can add media queries for further responsiveness */
+@media screen and (max-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Even fewer on small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Single column layout for very small screens */
+  }
+}
+
+/* CSS for the image row */
+.image-row {
+  /* Creates a flex container and aligns the items in a row */
+  display: flex;
+  justify-content: space-between; /* Distributes the items evenly with equal space around them */
+  align-items: center; /* Optional: Centers the items along the cross-axis */
+}
+
+.image-row img {
+  width: 18%; /* Decreases the width to fit 5 images in a row, considering some space for margins */
+  margin: 0 1%; /* Optional: Provides equal margins on the left and right */
+  height: auto; /* Maintains the aspect ratio of the images */
+}
+
+.indented-paragraph {
+  padding-left: 20px;  /* Space from the left border */
+  padding-right: 20px; /* Space from the right border */
+  
+  /* Optional other styles */
+  text-align: justify; /* For a more uniform block of text */
+  line-height: 1.6;    /* For readability */
+}
