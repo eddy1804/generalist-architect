@@ -1,0 +1,409 @@
+/* CSS Document */
+
+
+
+/* Banner Styles */
+
+#banner {
+    width: 100%;  /*  Makes the banner div scale to the width of the page */
+    text-align: center;
+    margin-bottom: 10px; /* spacing between the banner and the menu */
+}
+
+#banner img {
+    max-width: 100%; 
+    height: auto;
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; /* Centers the image if it's not as wide as the container */
+}
+
+/* End Banner Styles */
+
+
+
+
+/* Navigation Menu Styles */
+
+#main-menu {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color: #333;
+}
+
+#main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+    justify-content: space-around;
+}
+
+#main-menu ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#main-menu ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration:  none;
+    transition: background-color 0.3s;
+    font-weight: 1000;
+}
+
+#main-menu ul li a:hover {
+    background-color: #111;
+}
+
+#main-menu {
+    overflow: hidden; /* contains the floating elements */
+}
+
+
+
+
+/* Text Colors for Each Menu Item */
+#main-menu ul li:nth-child(1) a { color: #ffffff; } /* White for Item 1 */
+#main-menu ul li:nth-child(2) a { color: #eacbcb; } /* Red for Item 2 */
+#main-menu ul li:nth-child(3) a { color: #fad698; } /* Orange for Item 3 */
+#main-menu ul li:nth-child(4) a { color: #d9affc; } /* Blue/Purple for Item 4 */
+#main-menu ul li:nth-child(5) a { color: #b7d7af; } /* Green for Item 5 */
+#main-menu ul li:nth-child(6) a { color: #ffffff; } /* Beige for Item 6 */
+#main-menu ul li:nth-child(7) a { color: #f8f6c0; } /* Yellow for Item 7 */
+
+
+/* Gradient Backgrounds for Each Menu Item */
+#main-menu ul li:nth-child(1) a { background-image: linear-gradient(to right, #000000, #000000, #de0306); } /* Black for Home tab */
+#main-menu ul li:nth-child(2) a { background-image: linear-gradient(to right, #de0306, #fb0303, #fb7803); } /* Red for Red tab */
+#main-menu ul li:nth-child(3) a { background-image: linear-gradient(to right, #fb7803, #eb6400, #7517f5); } /* Orange for Orange tab */
+#main-menu ul li:nth-child(4) a { background-image: linear-gradient(to right, #7517f5, #4924d5, #5f8d68); } /* Blue/Purple for Blue/Purple tab */
+#main-menu ul li:nth-child(5) a { background-image: linear-gradient(to right, #5f8d68, #13962d, #c1c1b3); } /* Green for Green tab */
+#main-menu ul li:nth-child(6) a { background-image: linear-gradient(to right, #c1c1b3, #c8c8c2, #c5c580); } /* Beige for White tab */
+#main-menu ul li:nth-child(7) a { background-image: linear-gradient(to right, #c5c580, #c2c23e, #b1b119); } /* Yellow for Yellow tab */
+
+/* End Navigation Menu Styles */
+
+
+
+/* Styles for mouseover on different items */
+.flex-item.red:hover {
+    font-size: 30px; 
+    font-weight: 900;
+    color: #ffffff; /*text color */
+}
+
+.flex-item.orange:hover {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff; /* text color */
+}
+
+.flex-item.blue-purple:hover {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff; /* text color */
+}
+
+.flex-item.green:hover {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff; /* text color */
+}
+
+.flex-item.white:hover {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff; /* text color */
+}
+
+.flex-item.yellow:hover {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff; /* text color */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background_pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* keep the background fixed during scrolling */
+}
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out; /* transition for background change */
+    position: relative;
+    font-size: 20px; /* font size on hover */
+    font-weight: bold; /* Make text bold on hover */
+}
+
+/* Define the text color for each color class */
+.flex-item.red {
+    color: #cd1818; /* Red text for items with 'red' class */
+}
+
+.flex-item.orange {
+    color: #ff7403; /* Orange text for items with 'orange' class */
+}
+
+.flex-item.blue-purple {
+    color: #5b16c4; /* Blue-purple text for items with 'blue-purple' class */
+}
+
+.flex-item.green {
+    color: #085d18; /* Green text for items with 'green' class */
+}
+
+.flex-item.white {
+    color: #ada08e; /* White text for items with 'white' class */
+}
+
+.flex-item.yellow {
+    color: #c1c300; /* Yellow text for items with 'yellow' class */
+}
+
+.flex-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
+}
+
+.large, .medium, .small {
+    background-color: #eceff1;
+}
+
+.large {
+    flex: 0 0 48%;
+    height: 200px;
+    background-image: url('url1.jpg');
+}
+
+.medium {
+    flex: 0 0 30%;
+    height: 150px;
+    background-image: url('url2.jpg');
+}
+
+.small {
+    flex: 0 0 18%;
+    height: 100px;
+    background-image: url('url3.jpg');
+}
+
+
+
+/* Responsive styling for the body and overall layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+/* Banner Styles */
+#banner {
+    width: 100%;
+    margin-bottom: 1vh; /* vertical spacing */
+   }
+
+/* Navigation Menu Styles */
+#main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+ }
+
+#main-menu ul li {
+    float: left;
+    background-color: #444;
+  }
+
+#main-menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1vw 1vh; /* Responsive padding */
+    text-decoration: none;
+}
+
+/* Flex Container */
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 2vw; /* Responsive padding */
+}
+
+.flex-item {
+    margin: 1vw;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s, background-image 0.5s ease-in-out;
+    position: relative;
+}
+
+
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    overflow: hidden; /* helps keep the footer clean */
+    padding: 10px 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.footer-section {
+    padding: 5px; 
+    margin: 5px; 
+}
+
+.image-container {
+    display: flex;
+    align-items: center; /* Center the image vertically if smaller than the tallest one */
+}
+
+.footer-section img {
+    max-width: 80%; /* Ensures image is not bigger than its container! */
+    height: auto; /* aspect ratio */
+    display: block; /* Remove extra space under the image */
+}
+
+
+/* Responsive Sizing for Flex Items */
+.large, .medium, .small {
+    background-color: #eceff1;
+}
+
+.large {
+    flex: 0 0 45%; /* Adjusted for responsiveness! */
+    height: 20vh; /* Responsive height */
+}
+
+.medium {
+    flex: 0 0 28%;
+    height: 15vh;
+}
+
+.small {
+    flex: 0 0 18%;
+    height: 10vh;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    #main-menu ul li a {
+        padding: 3vw; /* padding for smaller screens */
+    }
+
+    .large, .medium, .small {
+        flex: 0 0 90%; /* Full width for small screens */
+        margin-bottom: 2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-menu ul li {
+        display: block; /*  menu items stacked vertically on very small screens */
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+
+.popup {
+    display: none;
+    position: fixed; 
+    z-index: 10; /* keeps popup above other content */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); /* set up semi-transparent background */
+    padding-top: 350px; 
+   
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Scalable width */
+    max-width: 600px; /* Max width */
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 40%; /* Set the width of the container */
+    height: auto; 
+    display: flex; /* Using flexbox!! */
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; /* image will not overflow the div's boundaries */
+}
+
+.container img {
+    max-width: 70%; /* Maximum width of the image in container */
+    height: auto; 
+    display: block; /* Removes bottom spacing under the image */
+}
