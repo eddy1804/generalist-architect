@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demystifying Food Origins | Yellow Fruits and Vegetables</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+    
+    
+    
+    
+<body>
+       <!-- Banner Image -->
+    <div id="banner">
+        <img src="images/fruitsandvegetables_banner1.jpg" alt="fruits and vegetables"> 
+    </div>
+    
+        <!-- Navigation Menu -->
+    <nav id="main-menu">
+        <ul>
+            <li class="home" ><a href="index.html">HOME</a></li>
+            <li class="red" ><a href="red.html">RED</a></li>
+            <li class="orange" ><a href="orange.html">ORANGE</a></li>
+            <li class="blue-purple" ><a href="blue-purple.html">BLUE AND PURPLE</a></li>
+            <li class="green" ><a href="green.html">GREEN</a></li>
+            <li class="white" ><a href="white.html">WHITE</a></li>
+            <li class="yellow" ><a href="yellow.html">YELLOW</a></li>
+        </ul>
+    </nav>
+    
+    
+    
+     <!-- Flex items without size classes -->
+    <div id="flex-container">
+       
+        
+ 
+<!-- /////// YELLOW /////// -->    
+    
+    
+        <div class="flex-item yellow" data-target="popup-corn" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/corn.jpg')" onmouseout="resetBackground(this, 'images/corn_bw.jpg')">Corn</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-corn">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-corn')">&times;</span>
+        <div class="container">
+    <img src="images/corn.jpg" alt="Corn"><img src="images/mexico.jpg" alt="Mexico">
+</div><p>  Corn, or maize, was first domesticated by indigenous peoples in <strong>southern Mexico</strong> about 10,000 years ago, playing a central role in Native American agriculture. </p>
+    </div>
+</div>       
+        
+        
+        <div class="flex-item yellow" data-target="popup-yellow-bell-pepper" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/yellow-bell-pepper.jpg')" onmouseout="resetBackground(this, 'images/yellow-bell-pepper_bw.jpg')">Yellow Bell Peppers</div>    
+    <!-- Popup Structure -->
+<div class="popup" id="popup-yellow-bell-pepper">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-yellow-bell-pepper')">&times;</span>
+        <div class="container">
+    <img src="images/yellow-bell-pepper.jpg" alt="Yellow Bell Peppers"><img src="images/central-and-south-america.jpg" alt="Southeast Asia">
+</div><p>Yellow bell peppers, like other bell peppers, originated in <strong>Central and South America</strong>, where they have been cultivated for thousands of years. The yellow variety, which is a fully matured form of the green bell pepper, is known for its sweet, almost fruity flavor and vibrant color. These peppers became globally popular after the Columbian Exchange, adding color and flavor to cuisines around the world.</p>
+    </div>
+</div>        
+    
+    
+        <div class="flex-item yellow" data-target="popup-yellow-beets" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/yellow-beets.jpg')" onmouseout="resetBackground(this, 'images/yellow-beets_bw.jpg')">Yellow Beets</div>   
+        <!-- Popup Structure -->
+<div class="popup" id="popup-yellow-beets">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-yellow-beets')">&times;</span>
+        <div class="container">
+    <img src="images/yellow-beets.jpg" alt="Yellow Beets"><img src="images/mediterranean.jpg" alt="Southeast Asia">
+</div><p> Yellow beets, also known as golden beets, are a variety of beetroot with a mild, sweet flavor and a vibrant yellow hue. They are believed to have originated in <strong>the Mediterranean</strong> region, where beets have been cultivated since ancient times for their edible roots and leaves. Over time, selective breeding led to the development of different varieties, including the yellow beet, prized for its unique color and sweeter taste compared to the more common red beet. </p>
+    </div>
+</div>        
+    
+        
+        <div class="flex-item yellow" data-target="popup-rutabaga" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/rutabaga.jpg')" onmouseout="resetBackground(this, 'images/rutabaga_bw.jpg')">Rutabaga</div> <!-- Popup Structure -->
+<div class="popup" id="popup-rutabaga">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-rutabaga')">&times;</span>
+        <div class="container">
+    <img src="images/rutabaga.jpg" alt="Rutabaga"><img src="images/scandinavia.jpg" alt="Southeast Asia">
+</div><p> Rutabaga, a root vegetable, was first cultivated in <strong>Scandinavia and Russia</strong> as a hardy, nutritious food source. </p>
+    </div>
+</div>        
+        
+        
+        <div class="flex-item yellow" data-target="popup-ginger" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/ginger.jpg')" onmouseout="resetBackground(this, 'images/ginger_bw.jpg')">Ginger</div>   
+        <!-- Popup Structure -->
+<div class="popup" id="popup-ginger">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-ginger')">&times;</span>
+        <div class="container">
+    <img src="images/ginger.jpg" alt="Ginger"><img src="images/south-east-asia.jpg" alt="Southeast Asia">
+</div><p> Ginger, originating in <strong>Southeast Asia</strong>, has been cultivated for its medicinal and culinary properties for millennia. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item yellow" data-target="popup-bananas" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/bananas.jpg')" onmouseout="resetBackground(this, 'images/bananas_bw.jpg')">Bananas</div> 
+<!-- Popup Structure -->
+<div class="popup" id="popup-bananas">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-bananas')">&times;</span>
+        <div class="container">
+    <img src="images/bananas.jpg" alt="Bananas"><img src="images/south-east-asia.jpg" alt="Southeast Asia">
+</div><p> Native to <strong>Southeast Asia</strong> and <strong>Papua New Guinea</strong>, bananas are believed to be one of the first fruits cultivated by humans, dating back to at least 5000 BCE. </p>
+    </div>
+</div>  
+
+    </div>  
+    
+    
+   <!-- Footer -->
+       <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><font color="#FFFFFF">YOUR HEALTH IN COLOR</font></h3>
+                <p align="center"><img src="images/healthy_color_diet_footer.png" alt="Your Health in Color" class="footer-content"></p>
+            </div>
+                   </div>
+    </footer>
+ 
+    
+    
+<script src="script1.js"></script>
+    </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demystifying Food Origins | Red Fruits and Vegetables</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+    
+    
+    
+    
+<body>
+       <!-- Banner Image -->
+    <div id="banner">
+        <img src="images/fruitsandvegetables_banner1.jpg" alt="fruits and vegetables"> 
+    </div>
+    
+        <!-- Navigation Menu -->
+    <nav id="main-menu">
+        <ul>
+            <li class="home" ><a href="index.html">HOME</a></li>
+            <li class="red" ><a href="red.html">RED</a></li>
+            <li class="orange" ><a href="orange.html">ORANGE</a></li>
+            <li class="blue-purple" ><a href="blue-purple.html">BLUE AND PURPLE</a></li>
+            <li class="green" ><a href="green.html">GREEN</a></li>
+            <li class="white" ><a href="white.html">WHITE</a></li>
+            <li class="yellow" ><a href="yellow.html">YELLOW</a></li>
+        </ul>
+    </nav>
+    
+    
+    
+     <!-- Flex items without size classes -->
+    <div id="flex-container">
+       
+        
+<!-- /////// RED /////// -->        
+        
+        <div class="flex-item red" data-target="popup-apples" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/apples.jpg')" onmouseout="resetBackground(this, 'images/apples_bw.jpg')">Apples</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-apples">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-apples')">&times;</span>
+        <div class="container">
+    <img src="images/apples.jpg" alt="Apples"><img src="images/central-asia.jpg" alt="Central Asia">
+</div><p> Originating in <strong>Central Asia</strong>, apples have been cultivated for thousands of years in Asia and Europe and were brought to North America by European colonists. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-tomatoes" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/tomatoes.jpg')" onmouseout="resetBackground(this, 'images/tomatoes_bw.jpg')">Tomatoes</div>
+        <!-- Popup Structure -->
+<div class="popup" id="popup-tomatoes">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-tomatoes')">&times;</span>
+        <div class="container">
+    <img src="images/tomatoes.jpg" alt="Tomatoes"><img src="images/central-asia.jpg" alt="Central America">
+</div><p> Tomatoes originated in <strong>Western South America and Central America</strong>. The Aztecs used them in their cooking by the time the Spanish arrived in the 16th century. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-strawberries" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/strawberries.jpg')" onmouseout="resetBackground(this, 'images/strawberries_bw.jpg')">Strawberries</div>
+        <!-- Popup Structure -->
+<div class="popup" id="popup-strawberries">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-strawberries')">&times;</span>
+        <div class="container">
+    <img src="images/strawberries.jpg" alt="Strawberries"><img src="images/central-asia.jpg" alt="Northern Hemisphere">
+</div><p>  Wild strawberries are native to multiple regions across the <strong>Northern Hemisphere</strong>, with each region developing its own native species. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-cherries" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/cherries.jpg')" onmouseout="resetBackground(this, 'images/cherries_bw.jpg')">Cherries</div> 
+                        <!-- Popup Structure -->
+<div class="popup" id="popup-cherries">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-cherries')">&times;</span>
+        <div class="container">
+    <img src="images/cherries.jpg" alt="Cherries"><img src="images/europe.jpg" alt="Europe">
+</div><p> Cherries have been enjoyed since ancient times, originating in <strong>Europe</strong> and regions like <strong>Anatolia</strong> and the <strong>Caucasus</strong>.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-raspberries" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/raspberries.jpg')" onmouseout="resetBackground(this, 'images/raspberries_bw.jpg')">Raspberries</div>
+                <!-- Popup Structure -->
+<div class="popup" id="popup-raspberries">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-raspberries')">&times;</span>
+        <div class="container">
+    <img src="images/raspberries.jpg" alt="Raspberries"><img src="images/eurasia.jpg" alt="Europe and Northern Asia">
+</div><p> Raspberries have a long history in <strong>Europe and Northern Asia</strong>, where they have grown wild and been cultivated for their fruit.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-pomegranates" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/pomegranates.jpg')" onmouseout="resetBackground(this, 'images/pomegranates_bw.jpg')">Pomegranates</div>
+        <!-- Popup Structure -->
+<div class="popup" id="popup-pomegranates">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-pomegranates')">&times;</span>
+        <div class="container">
+    <img src="images/pomegranates.jpg" alt="Pomegranates"><img src="images/india.jpg" alt="Africa">
+</div><p> Pomegranates, symbolizing fertility and abundance, originated in regions from <strong>Iran</strong> to the Himalayas in <strong>Northern India</strong>.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-watermelons" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/watermelons.jpg')" onmouseout="resetBackground(this, 'images/watermelons_bw.jpg')">Watermelons</div> 
+        <!-- Popup Structure -->
+<div class="popup" id="popup-watermelons">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-watermelons')">&times;</span>
+        <div class="container">
+    <img src="images/watermelons.jpg" alt="Watermelon"><img src="images/africa.jpg" alt="Africa">
+</div><p>  Watermelon traces its origin to <strong>West Africa</strong>, where it has been cultivated since ancient times. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-red-grapes" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/red-grapes.jpg')" onmouseout="resetBackground(this, 'images/red-grapes_bw.jpg')">Red Grapes</div>
+        <!-- Popup Structure -->
+<div class="popup" id="popup-red-grapes">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-red-grapes')">&times;</span>
+        <div class="container">
+    <img src="images/red-grapes.jpg" alt="Red Grapes"><img src="images/middle-east.jpg" alt="Middle Ease">
+</div><p>Red grapes, part of the vast grape family, trace their origins to the <strong>Near East</strong>, including regions like present-day Turkey, Armenia, Iran, and Georgia. They have been cultivated for thousands of years, prized for their use in winemaking, fresh consumption, and as dried fruits (raisins). The domestication and cultivation of red grapes played a significant role in ancient civilizations, particularly in the Mediterranean and Middle East, where they became deeply intertwined with cultural and economic activities.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-cranberries" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/cranberries.jpg')" onmouseout="resetBackground(this, 'images/cranberries_bw.jpg')">Cranberries</div>
+        <!-- Popup Structure -->
+<div class="popup" id="popup-cranberries">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-cranberries')">&times;</span>
+        <div class="container">
+    <img src="images/cranberries.jpg" alt="Cranberries"><img src="images/north-america.jpg" alt="North America">
+</div><p>Cranberries, native to <strong>North America </strong>and parts of <strong>Europe</strong>, have been valued for their tart flavor and medicinal properties, particularly by Native Americans.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-persimmons" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/persimmons.jpg')" onmouseout="resetBackground(this, 'images/persimmons_bw.jpg')">Persimmons</div>  
+                <!-- Popup Structure -->
+<div class="popup" id="popup-persimmons">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-persimmons')">&times;</span>
+        <div class="container">
+    <img src="images/persimmons.jpg" alt="Persimmons"><img src="images/china.jpg" alt="china">
+</div><p> Persimmons, native to <strong>China</strong>, have a long history of cultivation for their sweet, honey-like flavor, and have been a part of traditional Chinese medicine.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-dragonfruit" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/dragonfruit.jpg')" onmouseout="resetBackground(this, 'images/dragonfruit_bw.jpg')">Dragon Fruits</div>
+        <!-- Popup Structure -->
+<div class="popup" id="popup-dragonfruit">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-dragonfruit')">&times;</span>
+        <div class="container">
+    <img src="images/dragonfruit.jpg" alt="Dragon fruit"><img src="images/central-and-south-america.jpg" alt="Central America">
+</div><p> Dragon fruit, with its unique appearance, originated in <strong>Southern Mexico</strong> and <strong>Central America</strong>, cherished by indigenous peoples long before it spread globally.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-goji_berry" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/goji_berry.jpg')" onmouseout="resetBackground(this, 'images/goji_berry_bw.jpg')">Goji Berries</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-goji_berry">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-goji_berry')">&times;</span>
+        <div class="container">
+    <img src="images/goji_berry.jpg" alt="Goji Berries"><img src="images/china.jpg" alt="North America">
+</div><p> Goji Berries, originating in <strong>China</strong>, have been used in traditional Chinese medicine and cuisine for thousands of years, praised for their nutritional benefits. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-chokeberry" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/chokeberry.jpg')" onmouseout="resetBackground(this, 'images/chokeberry_bw.jpg')">Chokeberries</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-chokeberry">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-chokeberry')">&times;</span>
+        <div class="container">
+    <img src="images/chokeberry.jpg" alt="Chokeberries"><img src="images/north-america.jpg" alt="North America">
+</div><p>  Chokeberries, native to <strong>Eastern North America</strong>, are known for their rich antioxidant content and have been used by Native Americans for centuries. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-red-onions" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/red-onions.jpg')" onmouseout="resetBackground(this, 'images/red-onions_bw.jpg')">Red Onions</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-red-onions">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-red-onions')">&times;</span>
+        <div class="container">
+    <img src="images/red-onions.jpg" alt="Red Onions"><img src="images/iran.jpg" alt="Iran">
+</div><p>Red onions, with their distinct color and slightly sweet flavor, are part of the diverse onion family that originated in <strong>Central Asia, Iran, and West Pakistan</strong>. These onions have been cultivated for thousands of years, valued both for their culinary versatility and medicinal properties. Over time, they have spread globally and have become a staple in various cuisines, appreciated for the vibrant color and flavor they add to dishes. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-radish" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/radish.jpg')" onmouseout="resetBackground(this, 'images/radish_bw.jpg')">Radish</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-radish">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-radish')">&times;</span>
+        <div class="container">
+    <img src="images/radish.jpg" alt="Radishes"><img src="images/south-east-asia.jpg" alt="Southeast Asia">
+</div><p>  Radishes were first cultivated in <strong>Southeast Asia</strong> before Roman times and were popular across the ancient world for their peppery flavor and ease of growth. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-beets" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/beets.jpg')" onmouseout="resetBackground(this, 'images/beets_bw.jpg')">Beets</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-beets">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-beets')">&times;</span>
+        <div class="container">
+    <img src="images/beets.jpg" alt="Beets"><img src="images/mediterranean.jpg" alt="Mediterranean">
+</div><p> Beets have been consumed since ancient times in the <strong>Mediterranean</strong> region, initially for their greens, and later for their root. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-boysenberries" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/boysenberries.jpg')" onmouseout="resetBackground(this, 'images/boysenberries_bw.jpg')">Boysenberry </div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-boysenberries">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-boysenberries')">&times;</span>
+        <div class="container">
+    <img src="images/boysenberries.jpg" alt="Boysenberries"><img src="images/usa.jpg" alt="United States">
+</div><p> Boysenberry, a cross between European raspberry, blackberry, American dewberry, and loganberry, was developed in the <strong>United States</strong>, known for its large size and deep flavor. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-red-bell-pepper" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/red-bell-pepper.jpg')" onmouseout="resetBackground(this, 'images/red-bell-pepper_bw.jpg')">Red Bell Peppers</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-red-bell-pepper">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-red-bell-pepper')">&times;</span>
+        <div class="container">
+    <img src="images/red-bell-pepper.jpg" alt="Red Bell Peppers"><img src="images/central-and-south-america.jpg" alt="Central and South America">
+</div><p> Red bell peppers, like all bell peppers, originated in <strong>Central and South America</strong>, where they have been cultivated for thousands of years. The red variety, which is simply a fully ripe form of the green bell pepper, is known for its sweet flavor and high vitamin content. Bell peppers were spread across the globe by Spanish and Portuguese explorers in the 16th and 17th centuries, quickly becoming integral to many cuisines worldwide.</p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-red-potatos" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/red-potatos.jpg')" onmouseout="resetBackground(this, 'images/red-potatos_bw.jpg')">Red Potatos</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-red-potatos">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-red-potatos')">&times;</span>
+        <div class="container">
+    <img src="images/red-potatos.jpg" alt="Red Potatoes"><img src="images/south-america.jpg" alt="United States">
+</div><p> Red potatoes, a variant within the diverse potato species originally from <strong>South America</strong>, specifically the Andean region, have been cultivated for their unique qualities like red skin and often waxy texture. These potatoes were developed from the rich variety of native Andean potatoes, which were a staple food for the Incan Empire and other indigenous cultures in the region. After the European colonization of the Americas, potatoes, including red varieties, spread globally and became a fundamental crop in many countries. </p>
+    </div>
+</div>
+        
+        
+        <div class="flex-item red" data-target="popup-turnips" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/turnips.jpg')" onmouseout="resetBackground(this, 'images/turnips_bw.jpg')">Turnip</div>
+<!-- Popup Structure -->
+<div class="popup" id="popup-turnips">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-turnips')">&times;</span>
+        <div class="container">
+    <img src="images/turnips.jpg" alt="Turnips"><img src="images/asia-continent.jpg" alt="Western Asia and Europe">
+</div><p>  Turnips have been a staple food in <strong>Western Asia and Europe</strong> since prehistoric times, valued for their hardiness and nutritional content. </p>
+    </div>
+</div>   
+        
+        
+        <div class="flex-item red" data-target="popup-dates" onclick="openPopup(this.getAttribute('data-target'))" onmouseover="changeBackground(this, 'images/dates.jpg')" onmouseout="resetBackground(this, 'images/dates_bw.jpg')">Dates</div>    
+<!-- Popup Structure -->
+<div class="popup" id="popup-dates">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-dates')">&times;</span>
+        <div class="container">
+    <img src="images/dates.jpg" alt="Dates"><img src="images/africa.jpg" alt="Africa">
+</div><p> Dates, one of the oldest cultivated fruits, originated in the <strong>Middle East and North Africa</strong>, an essential food source in these regions for millennia. </p>
+    </div>
+</div>
+    </div>
+    
+    
+  <!-- Footer -->
+       <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><font color="#FFFFFF">YOUR HEALTH IN COLOR</font></h3>
+                <p align="center"><img src="images/healthy_color_diet_footer.png" alt="Your Health in Color" class="footer-content"></p>
+            </div>
+                   </div>
+    </footer>
+  
+    
+<script src="script1.js"></script>
+    </body>
+</html>
